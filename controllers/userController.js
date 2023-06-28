@@ -4,7 +4,6 @@ const { User, Thought } = require('../models');
 const userController = {
   // GET /api/users
   getAllUsers: async (req, res) => {
-    console.log("Hello")
     try {
       const users = await User.find();
       res.json(users);
